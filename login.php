@@ -91,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     <main class="form-signin">
         <form method="POST">
             <img class="mb-4" src="img/day7.jpg.png" alt="" width="75" height="90">
-            <h1 class="h3 mb-3 fw-normal">Sign In To Daily Journal</h1>
+            <h1 class="h3 mb-3 fw-normal">Form Login</h1>
             <?php if (!empty($loginError)): ?>
                 <div class="alert alert-danger"><?php echo htmlspecialchars($loginError); ?></div>
             <?php endif; ?>
