@@ -10,13 +10,12 @@
                 </thead>
                 <tbody>
                     <?php
-                    include "Koneksi.php";
-
+                    include "koneksi.php";
                     $hlm = (isset($_POST['hlm'])) ? $_POST['hlm'] : 1;
                     $limit = 3;
                     $limit_start = ($hlm - 1) * $limit;
                     $no = $limit_start + 1;
-                    
+
                     $sql = "SELECT * FROM article ORDER BY tanggal DESC LIMIT $limit_start, $limit";
                     $hasil = $conn->query($sql);
 
@@ -42,12 +41,9 @@
                                 ?>
                             </td>
                             <td>
-                                <!-- untuk tombol aksi update dan delete -->
-                                <td>
-    <a href="#" title="edit" class="badge rounded-pill text-bg-success" data-bs-toggle="modal" data-bs-target="#modalEdit<?= $row["id"] ?>"><i class="bi bi-pencil"></i></a>
-    <a href="#" title="delete" class="badge rounded-pill text-bg-danger" data-bs-toggle="modal" data-bs-target="#modalHapus<?= $row["id"] ?>"><i class="bi bi-x-circle"></i></a>
-
-    <!-- Awal Modal Edit -->
+                                <a href="#" title="edit" class="badge rounded-pill text-bg-success" data-bs-toggle="modal" data-bs-target="#modalEdit<?= $row["id"] ?>"><i class="bi bi-pencil"></i></a>
+                                <a href="#" title="delete" class="badge rounded-pill text-bg-danger" data-bs-toggle="modal" data-bs-target="#modalHapus<?= $row["id"] ?>"><i class="bi bi-x-circle"></i></a>
+                                <!-- Awal Modal Edit -->
 <div class="modal fade" id="modalEdit<?= $row["id"] ?>" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -119,7 +115,6 @@
     </div>
 </div>
 <!-- Akhir Modal Hapus -->
-</td>
                             </td>
                         </tr>
                     <?php
@@ -127,7 +122,6 @@
                     ?>
                 </tbody>
             </table>
-
             <?php 
 $sql1 = "SELECT * FROM article";
 $hasil1 = $conn->query($sql1); 
