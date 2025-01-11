@@ -223,13 +223,13 @@ include "koneksi.php";
                 <h3>Gallery Highlights</h3>
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="img/day6.jpg.jfif" class="gallery-image" alt="Highlight 1">
+                        <img src="img/day6.jpg.png" class="gallery-image" alt="Highlight 1">
                     </div>
                     <div class="col-md-6">
-                        <img src="img/day5.jpg.jfif" class="gallery-image" alt="Highlight 2">
+                        <img src="img/day5.jpg.png" class="gallery-image" alt="Highlight 2">
                     </div>
                     <div class="col-md-6">
-                        <img src="img/day4.jpg.jfif" class="gallery-image" alt="Highlight 3">
+                        <img src="img/day4.jpg.png" class="gallery-image" alt="Highlight 3">
                     </div>
                     <div class="col-md-6">
                         <img src="img/day3.jpg.jfif" class="gallery-image" alt="Highlight 4">
@@ -275,13 +275,13 @@ include "koneksi.php";
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="img/day6.jpg.jfif" class="d-block w-100" alt="...">
+                        <img src="img/day6.jpg.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/day5.jpg.jfif" class="d-block w-100" alt="...">
+                        <img src="img/day5.jpg.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="img/day4.jpg.jfif" class="d-block w-100" alt="...">
+                        <img src="img/day4.jpg.png" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
