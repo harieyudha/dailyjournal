@@ -1,13 +1,12 @@
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#modalTambah">
-    <i class="bi bi-plus-lg"></i> Tambah Article
-</button>
 <div class="container">
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-secondary mb-2" data-bs-toggle="modal" data-bs-target="#modalTambah">
+        <i class="bi bi-plus-lg"></i> Tambah Article
+    </button>
     <div class="row">
         <div class="table-responsive" id="article_data">
-           
-        </div>
 
+        </div>
         <!-- Awal Modal Tambah-->
 <div class="modal fade" id="modalTambah" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -42,7 +41,6 @@
 <!-- Akhir Modal Tambah-->
     </div>
 </div>
-
 <script>
 $(document).ready(function(){
     load_data();
@@ -58,13 +56,12 @@ $(document).ready(function(){
             }
         })
     } 
-    $(document).on('click', '.halaman', function(){
-    var hlm = $(this).attr("id");
-    load_data(hlm);
-});
+        $(document).on('click', '.halaman', function(){
+        var hlm = $(this).attr("id");
+        load_data(hlm);
+    });
 });
 </script>
-
 <?php
 include "upload_foto.php";
 
