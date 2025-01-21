@@ -8,7 +8,6 @@ if (!isset($_SESSION['username'])) {
 	header("location:login.php"); 
 } 
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -69,6 +68,9 @@ if (!isset($_SESSION['username'])) {
             </li> 
             <li class="nav-item">
                 <a class="nav-link" href="admin.php?page=gallery">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="admin.php?page=user">User</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle text-danger fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
